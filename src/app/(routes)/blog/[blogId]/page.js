@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 export default function Page({ params }) {
+  console.log(params, params.blogId);
   return (
     <>
-      <div>My Post: {params.slug}</div>
+      <div>My Post:{params.blogId}</div>
       <Link href="/">
         <button
           type="submit"
